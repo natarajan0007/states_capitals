@@ -1,0 +1,45 @@
+india_dict = {'Andhra Pradesh' : 'Amaravathi',
+'Arunachal Prades' : 'Itanagar',
+'Assam' : 'Dispur',
+'Bihar' : 'Patna',
+'Chhatisgarh' : 'Raipur',
+'Goa' : 'Panaji',
+'Gujarat' : 'Gandhinagar',
+'Haryana' : 'Chandigarh',
+'Himachal Pradesh' : 'Shimla',
+'Jammu & Kashmir' : 'Srinagar(Summer) Jammu (Winter)',
+'Jharkhand' : 'Ranchi',
+'Karnataka' : 'Bangalore',
+'Kerala' : 'Thiruvananthapuram',
+'Madhya Pradesh' : 'Bhopal',
+'Maharasthara' : 'Mumbai',
+'Manipur' : 'Imphal',
+'Meghalaya' : 'Shillong',
+'Mizoram' : 'Aizwal',
+'Nagaland' : 'Kohima',
+'Odisha' : 'Bhubaneshwar',
+'Punjab' : 'Chandigarh (shared with Haryana)',
+'Rajasthan' : 'Jaipur',
+'Sikkim' : 'Gangtok',
+'Tamil Nadu' : 'Chennai',
+'Telangana' : 'Hyderabad',
+'Tripura' : 'Agartala',
+'Uttar Pradesh' : 'Lucknow',
+}
+
+import random
+
+states = list(india_dict.keys())
+while True:
+    state = random.choice(states)
+    capital = india_dict[state]
+    ans_guess = input("What is the capital of " +state+ "? ")
+
+    if ans_guess == "Quit":
+        break
+    elif capital_guess == capital:
+        print("Correct!! Good Job.")
+    else:
+        print("Incorrect. The capital of" + state + "is" +capital+ ".")
+
+print("All done")
